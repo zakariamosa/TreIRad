@@ -15,6 +15,8 @@
 		1C4283292588E69F00E7972B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C4283272588E69F00E7972B /* LaunchScreen.storyboard */; };
 		1C4283342588E6A000E7972B /* TreIRadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4283332588E6A000E7972B /* TreIRadTests.swift */; };
 		1C42833F2588E6A000E7972B /* TreIRadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C42833E2588E6A000E7972B /* TreIRadUITests.swift */; };
+		1C42835025891D4D00E7972B /* TreIRadModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C42834F25891D4D00E7972B /* TreIRadModel.swift */; };
+		1C42835525891EF900E7972B /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C42835425891EF900E7972B /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		1C42833A2588E6A000E7972B /* TreIRadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TreIRadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C42833E2588E6A000E7972B /* TreIRadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreIRadUITests.swift; sourceTree = "<group>"; };
 		1C4283402588E6A000E7972B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C42834F25891D4D00E7972B /* TreIRadModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreIRadModel.swift; sourceTree = "<group>"; };
+		1C42835425891EF900E7972B /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +104,9 @@
 			isa = PBXGroup;
 			children = (
 				1C42831C2588E69A00E7972B /* AppDelegate.swift */,
+				1C42834F25891D4D00E7972B /* TreIRadModel.swift */,
 				1C42831E2588E69A00E7972B /* SceneDelegate.swift */,
+				1C42835425891EF900E7972B /* Player.swift */,
 				1C4283202588E69A00E7972B /* ViewController.swift */,
 				1C4283222588E69A00E7972B /* Main.storyboard */,
 				1C4283252588E69F00E7972B /* Assets.xcassets */,
@@ -259,7 +265,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C4283212588E69A00E7972B /* ViewController.swift in Sources */,
+				1C42835025891D4D00E7972B /* TreIRadModel.swift in Sources */,
 				1C42831D2588E69A00E7972B /* AppDelegate.swift in Sources */,
+				1C42835525891EF900E7972B /* Player.swift in Sources */,
 				1C42831F2588E69A00E7972B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
