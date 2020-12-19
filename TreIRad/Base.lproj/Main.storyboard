@@ -31,7 +31,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                 <connections>
-                                    <action selector="btn11Clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qlK-ou-LhQ"/>
+                                    <action selector="btnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="skT-nl-Q0k"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3jq-ZS-9Ny">
@@ -39,7 +39,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                 <connections>
-                                    <action selector="btn12Clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8iA-6W-kj2"/>
+                                    <action selector="btnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7h4-AT-fm2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lxN-LG-36F">
@@ -47,7 +47,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 <connections>
-                                    <action selector="btn13Clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gMF-0m-qAU"/>
+                                    <action selector="btnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vyH-7d-kA2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7us-bi-H3v">
@@ -55,7 +55,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 <connections>
-                                    <action selector="btn21Clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9wt-54-WJK"/>
+                                    <action selector="btnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="64Z-kQ-ma5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5zh-qS-VNX">
@@ -63,7 +63,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 <connections>
-                                    <action selector="btn22Clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7LY-il-keq"/>
+                                    <action selector="btnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n7S-HW-DCc"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hHi-XI-zaR">
@@ -71,7 +71,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 <connections>
-                                    <action selector="btn23Clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j7t-Gr-Ns2"/>
+                                    <action selector="btnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CyV-V9-SKX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ap-Sg-bYU">
@@ -79,7 +79,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 <connections>
-                                    <action selector="btn31Clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M1T-9r-SC0"/>
+                                    <action selector="btnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uhN-aA-ZtX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zer-kb-OvM">
@@ -87,7 +87,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 <connections>
-                                    <action selector="btn32Clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="STI-zM-sDL"/>
+                                    <action selector="btnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="whP-of-nKj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NQb-Kp-eCd">
@@ -95,7 +95,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 <connections>
-                                    <action selector="btn33Clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Zj-Bu-Q8g"/>
+                                    <action selector="btnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="osb-ih-e4N"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -108,7 +108,7 @@
                     </view>
                     <connections>
                         <outlet property="btn11" destination="Ale-VV-rJI" id="0D0-u3-hbl"/>
-                        <outlet property="btn12" destination="3jq-ZS-9Ny" id="q80-KD-ySk"/>
+                        <outlet property="btn12" destination="3jq-ZS-9Ny" id="lEC-Yx-dqD"/>
                         <outlet property="btn13" destination="lxN-LG-36F" id="qi6-gI-cd3"/>
                         <outlet property="btn21" destination="7us-bi-H3v" id="sXA-MK-6zj"/>
                         <outlet property="btn22" destination="5zh-qS-VNX" id="wIc-Ka-GSM"/>

@@ -9,4 +9,5 @@ import Foundation
 enum Player {
     case X
     case O
+    case Dator
 }

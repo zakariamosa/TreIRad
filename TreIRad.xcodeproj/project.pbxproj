@@ -17,6 +17,7 @@
 		1C42833F2588E6A000E7972B /* TreIRadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C42833E2588E6A000E7972B /* TreIRadUITests.swift */; };
 		1C42835025891D4D00E7972B /* TreIRadModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C42834F25891D4D00E7972B /* TreIRadModel.swift */; };
 		1C42835525891EF900E7972B /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C42835425891EF900E7972B /* Player.swift */; };
+		1C86EDC7258A3D960086A481 /* Moves.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C86EDC6258A3D960086A481 /* Moves.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		1C4283402588E6A000E7972B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C42834F25891D4D00E7972B /* TreIRadModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreIRadModel.swift; sourceTree = "<group>"; };
 		1C42835425891EF900E7972B /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		1C86EDC6258A3D960086A481 /* Moves.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moves.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				1C4283252588E69F00E7972B /* Assets.xcassets */,
 				1C4283272588E69F00E7972B /* LaunchScreen.storyboard */,
 				1C42832A2588E69F00E7972B /* Info.plist */,
+				1C86EDC6258A3D960086A481 /* Moves.swift */,
 			);
 			path = TreIRad;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 			files = (
 				1C4283212588E69A00E7972B /* ViewController.swift in Sources */,
 				1C42835025891D4D00E7972B /* TreIRadModel.swift in Sources */,
+				1C86EDC7258A3D960086A481 /* Moves.swift in Sources */,
 				1C42831D2588E69A00E7972B /* AppDelegate.swift in Sources */,
 				1C42835525891EF900E7972B /* Player.swift in Sources */,
 				1C42831F2588E69A00E7972B /* SceneDelegate.swift in Sources */,
