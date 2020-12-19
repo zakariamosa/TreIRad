@@ -39,10 +39,11 @@ class ViewController: UIViewController {
     
     
     @IBAction func btnClicked(_ sender: UIButton) {
+        
+        
+        player(player)
         sender.setTitle(currentValue, for: UIButton.State.normal)
         sender.isEnabled=false
-        switchsegmentcontrol()
-        player(player)
         print(sender.tag)//Optional("x")
         let mov=Move(pmove: sender.tag)
         switch currentPlayer {
@@ -55,8 +56,16 @@ class ViewController: UIViewController {
         }
         TreIRadModel(player: currentPlayer,move:mov)
         print(sender.currentTitle?.lowercased())
-        let mymodel=TreIRadModel(player: currentPlayer,move:mov)
-        print(mymodel.playerMoves)
+        //let mymodel=TreIRadModel(player: currentPlayer,move:mov)
+        for mov in playerMoves {
+            print(mov.0)
+            print(mov.1.move)
+        }
+        
+        
+        
+        switchsegmentcontrol()
+        
     }
     
     
@@ -93,14 +102,14 @@ class ViewController: UIViewController {
                 currentValue="O"
                 currentPlayer=Player.O
             }
-        switch currentPlayer {
+        /*switch currentPlayer {
         case .X:
             print("Current player is X")
         case .O:
             print("Current player is O")
         case .Dator:
             print("Current player is Dator")
-        }
+        }*/
     }
     
     

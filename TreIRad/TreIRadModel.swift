@@ -6,12 +6,14 @@
 //
 
 import Foundation
+var playerMoves:[(Player,Move)]=[]
 struct TreIRadModel{
-    var playerMoves:[(Player,Move)]=[]
+    //var playerMoves:[(Player,Move)]=[]
     init(player:Player, move:Move) {
         let newmove:[(Player,Move)]=[(player,move)]
         //self.playerMoves.append(contentsOf: newmove)
-        self.playerMoves.insert(contentsOf: newmove, at: playerMoves.count)
+        //self.playerMoves.insert(contentsOf: newmove, at: playerMoves.count)
+        playerMoves.insert(contentsOf: newmove, at: playerMoves.count)
     }
     
     
