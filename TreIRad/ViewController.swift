@@ -38,6 +38,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var btn33: UIButton!
     
     
+    @IBOutlet weak var lblwinner: UILabel!
+    
+    
+    var allplayersmoves=PlayerMoves()
+    
+    
     @IBAction func btnClicked(_ sender: UIButton) {
         
         
@@ -55,17 +61,71 @@ class ViewController: UIViewController {
             print("Current player is Dator")
         }
         TreIRadModel(player: currentPlayer,move:mov)
+        
+        allplayersmoves.thePlayerMoves.append(PlayerMove(player: currentPlayer,move:mov))
         print(sender.currentTitle?.lowercased())
         //let mymodel=TreIRadModel(player: currentPlayer,move:mov)
-        for mov in playerMoves {
+        /*for mov in playerMoves {
             print(mov.0)
             print(mov.1.move)
+        }*/
+        for mov in allplayersmoves.thePlayerMoves {
+            print(mov.player)
+            print(mov.move.move)
+        }
+        
+        if doesThePlayerWinnTheGame(thecurrentplayer:currentPlayer){
+            lblwinner.text=currentValue
         }
         
         
         
         switchsegmentcontrol()
         
+    }
+    
+    func doesThePlayerWinnTheGame(thecurrentplayer:Player)->Bool{
+        let gamewinnr=DoWeHaveAWinner()
+        
+        /*for mov in playerMoves {
+            if mov.0==thecurrentplayer {
+                print(mov.0)
+                print(mov.1.move)
+                var numberOfPoints=0
+                for arr in gamewinnr.gameWinningCases {
+                    if arr.0==mov.1.move||arr.1==mov.1.move||arr.2==mov.1.move{
+                        numberOfPoints+=1
+                        print("this player score is ", numberOfPoints)
+                    }
+                }
+            }
+           
+        }*/
+        
+        let playermoves=playerMoves.filter {$0.0 == thecurrentplayer }
+        
+        let thisplayermoves=allplayersmoves.thePlayerMoves.filter {$0.player == thecurrentplayer }
+        var arrayofthisplayermoves=[Int]()
+        arrayofthisplayermoves.removeAll()
+        for thisplyrmov in thisplayermoves {
+            arrayofthisplayermoves.append(thisplyrmov.move.move)
+        }
+        
+        if arrayofthisplayermoves.count>=3{
+            let findListSet = Set(arrayofthisplayermoves)
+            for arr in gamewinnr.gameWinningCases {
+                let listSet = Set(arr)
+                let allElemsContained = findListSet.isSubset(of: listSet)
+                if allElemsContained{
+                    return true
+                }
+            }
+        }
+        
+        
+        
+        
+        return false
     }
     
     

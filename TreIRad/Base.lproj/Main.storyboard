@@ -98,6 +98,13 @@
                                     <action selector="btnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="osb-ih-e4N"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5rT-l3-Ltf">
+                                <rect key="frame" x="95" y="426" width="156" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
@@ -116,6 +123,7 @@
                         <outlet property="btn31" destination="9ap-Sg-bYU" id="xUo-cJ-cpc"/>
                         <outlet property="btn32" destination="zer-kb-OvM" id="qSe-Un-rm2"/>
                         <outlet property="btn33" destination="NQb-Kp-eCd" id="TAa-3q-q4J"/>
+                        <outlet property="lblwinner" destination="5rT-l3-Ltf" id="WfR-ah-GLG"/>
                         <outlet property="player" destination="YEI-Sn-xJA" id="2XC-Nb-Xh6"/>
                         <outlet property="segment" destination="YEI-Sn-xJA" id="oxa-Dx-eMQ"/>
                     </connections>
