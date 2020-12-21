@@ -15,7 +15,6 @@
 		1C4283292588E69F00E7972B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C4283272588E69F00E7972B /* LaunchScreen.storyboard */; };
 		1C4283342588E6A000E7972B /* TreIRadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4283332588E6A000E7972B /* TreIRadTests.swift */; };
 		1C42833F2588E6A000E7972B /* TreIRadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C42833E2588E6A000E7972B /* TreIRadUITests.swift */; };
-		1C42835025891D4D00E7972B /* TreIRadModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C42834F25891D4D00E7972B /* TreIRadModel.swift */; };
 		1C42835525891EF900E7972B /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C42835425891EF900E7972B /* Player.swift */; };
 		1C60042F258E0F4800509AA9 /* DoWeHaveAWinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60042E258E0F4800509AA9 /* DoWeHaveAWinner.swift */; };
 		1C62341B259027C40071B733 /* PlayerMove.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C62341A259027C40071B733 /* PlayerMove.swift */; };
@@ -55,7 +54,6 @@
 		1C42833A2588E6A000E7972B /* TreIRadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TreIRadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C42833E2588E6A000E7972B /* TreIRadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreIRadUITests.swift; sourceTree = "<group>"; };
 		1C4283402588E6A000E7972B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1C42834F25891D4D00E7972B /* TreIRadModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreIRadModel.swift; sourceTree = "<group>"; };
 		1C42835425891EF900E7972B /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		1C60042E258E0F4800509AA9 /* DoWeHaveAWinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoWeHaveAWinner.swift; sourceTree = "<group>"; };
 		1C62341A259027C40071B733 /* PlayerMove.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerMove.swift; sourceTree = "<group>"; };
@@ -112,7 +110,6 @@
 			isa = PBXGroup;
 			children = (
 				1C42831C2588E69A00E7972B /* AppDelegate.swift */,
-				1C42834F25891D4D00E7972B /* TreIRadModel.swift */,
 				1C62341F259029550071B733 /* PlayerMoves.swift */,
 				1C60042E258E0F4800509AA9 /* DoWeHaveAWinner.swift */,
 				1C62341A259027C40071B733 /* PlayerMove.swift */,
@@ -278,7 +275,6 @@
 			files = (
 				1C4283212588E69A00E7972B /* ViewController.swift in Sources */,
 				1C623420259029550071B733 /* PlayerMoves.swift in Sources */,
-				1C42835025891D4D00E7972B /* TreIRadModel.swift in Sources */,
 				1C86EDC7258A3D960086A481 /* Moves.swift in Sources */,
 				1C62341B259027C40071B733 /* PlayerMove.swift in Sources */,
 				1C42831D2588E69A00E7972B /* AppDelegate.swift in Sources */,
