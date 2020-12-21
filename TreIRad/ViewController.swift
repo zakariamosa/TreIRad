@@ -95,7 +95,7 @@ class ViewController: UIViewController {
             let findListSet = Set(arrayofthisplayermoves)
             for arr in gamewinnr.gameWinningCases {
                 let listSet = Set(arr)
-                let allElemsContained = findListSet.isSubset(of: listSet)
+                let allElemsContained = findListSet.isSubset(of: listSet)||listSet.isSubset(of: findListSet)
                 if allElemsContained{
                     return true
                 }
