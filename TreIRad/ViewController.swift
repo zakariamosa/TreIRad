@@ -102,6 +102,10 @@ class ViewController: UIViewController {
             }
         }
         
+        if allplayersmoves.thePlayerMoves.count==9{
+            lblwinner.text="Oavgjort"
+        }
+        
         
         
         
