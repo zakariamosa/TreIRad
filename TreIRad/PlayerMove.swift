@@ -7,6 +7,6 @@
 
 import Foundation
 struct PlayerMove{
-    var player:Player
+    var player:PlayerType
     var move:Move
 }

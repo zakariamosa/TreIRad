@@ -21,7 +21,15 @@ class ViewController: UIViewController {
         btn31.tag=31
         btn32.tag=32
         btn33.tag=33
+        
+        
+        player1.text=playerx
+        player2.text=playery
     }
+    
+
+    
+  
     
     
     @IBOutlet weak var player: UISegmentedControl!
@@ -38,10 +46,18 @@ class ViewController: UIViewController {
     @IBOutlet weak var btn33: UIButton!
     
     
+    
+    @IBOutlet weak var player1: UILabel!
+    @IBOutlet weak var player2: UILabel!
+    
     @IBOutlet weak var lblwinner: UILabel!
+    
+    let segueToResult="segueToResult"
     
     
     var allplayersmoves=PlayerMoves()
+    var playerx:String?
+    var playery:String?
     
     
     @IBAction func btnClicked(_ sender: UIButton) {
@@ -71,7 +87,12 @@ class ViewController: UIViewController {
         }*/
         
         if doesThePlayerWinnTheGame(thecurrentplayer:currentPlayer){
-            lblwinner.text=currentValue
+            if currentValue=="X" {
+                lblwinner.text=playerx
+            } else {
+                lblwinner.text=playery
+            }
+            performSegue(withIdentifier: segueToResult, sender: self)
         }
         
         
@@ -80,7 +101,15 @@ class ViewController: UIViewController {
         
     }
     
-    func doesThePlayerWinnTheGame(thecurrentplayer:Player)->Bool{
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier==segueToResult{
+            //winnername
+            let destinationVC=segue.destination as! ResultViewController
+            destinationVC.winnername=lblwinner.text
+        }
+    }
+    
+    func doesThePlayerWinnTheGame(thecurrentplayer:PlayerType)->Bool{
         let gamewinnr=DoWeHaveAWinner()
         
         
@@ -104,6 +133,7 @@ class ViewController: UIViewController {
         
         if allplayersmoves.thePlayerMoves.count==9{
             lblwinner.text="Oavgjort"
+            performSegue(withIdentifier: segueToResult, sender: self)
         }
         
         
@@ -131,7 +161,7 @@ class ViewController: UIViewController {
     }
     
     private var currentValue:String="X"
-    private var currentPlayer=Player.X
+    private var currentPlayer=PlayerType.X
     
     
     @IBOutlet weak var segment: UISegmentedControl!
@@ -141,10 +171,10 @@ class ViewController: UIViewController {
         
             if sender.selectedSegmentIndex==0 {
                 currentValue="X"
-                currentPlayer=Player.X
+                currentPlayer=PlayerType.X
             }else{
                 currentValue="O"
-                currentPlayer=Player.O
+                currentPlayer=PlayerType.O
             }
         /*switch currentPlayer {
         case .X:
