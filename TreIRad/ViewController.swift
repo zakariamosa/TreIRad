@@ -22,9 +22,11 @@ class ViewController: UIViewController {
         btn32.tag=32
         btn33.tag=33
         
-        
+        playerx=thetwoplayers[0].player_name
+        playery=thetwoplayers[1].player_name
         player1.text=playerx
         player2.text=playery
+        
     }
     
 
@@ -89,10 +91,12 @@ class ViewController: UIViewController {
         if doesThePlayerWinnTheGame(thecurrentplayer:currentPlayer){
             if currentValue=="X" {
                 lblwinner.text=playerx
+                performSegue(withIdentifier: segueToResult, sender: self)
             } else {
                 lblwinner.text=playery
+                performSegue(withIdentifier: segueToResult, sender: self)
             }
-            performSegue(withIdentifier: segueToResult, sender: self)
+            
         }
         
         
@@ -106,6 +110,17 @@ class ViewController: UIViewController {
             //winnername
             let destinationVC=segue.destination as! ResultViewController
             destinationVC.winnername=lblwinner.text
+            /*var thewinnernameis:String
+            if currentValue=="X" {
+                thewinnernameis=thetwoplayers[0].player_name
+            } else if currentValue=="O"{
+                thewinnernameis=thetwoplayers[1].player_name
+            }
+            else {
+                thewinnernameis="Oavgjort"
+            }
+            //print("calling seguetoresult" + currentValue+"    "+thewinnernameis)
+            destinationVC.winnername=thewinnernameis*/
         }
     }
     
@@ -133,6 +148,7 @@ class ViewController: UIViewController {
         
         if allplayersmoves.thePlayerMoves.count==9{
             lblwinner.text="Oavgjort"
+            
             performSegue(withIdentifier: segueToResult, sender: self)
         }
         
