@@ -22,8 +22,7 @@ class ViewController: UIViewController {
         btn32.tag=32
         btn33.tag=33
         
-        //playerx=thetwoplayers[0].player_name
-        //playery=thetwoplayers[1].player_name
+        
         player1.text=playerx
         player2.text=playery
         
@@ -83,11 +82,7 @@ class ViewController: UIViewController {
         
         allplayersmoves.thePlayerMoves.append(PlayerMove(player: currentPlayer,move:mov))
         print(sender.currentTitle?.lowercased())
-        /*
-        for mov in allplayersmoves.thePlayerMoves {
-            print(mov.player)
-            print(mov.move.move)
-        }*/
+        
         
         if doesThePlayerWinnTheGame(thecurrentplayer:currentPlayer){
             if currentValue=="X" {
@@ -113,17 +108,6 @@ class ViewController: UIViewController {
             destinationVC.winnername=lblwinner.text
             destinationVC.playerx=playerx
             destinationVC.playery=playery
-            /*var thewinnernameis:String
-            if currentValue=="X" {
-                thewinnernameis=thetwoplayers[0].player_name
-            } else if currentValue=="O"{
-                thewinnernameis=thetwoplayers[1].player_name
-            }
-            else {
-                thewinnernameis="Oavgjort"
-            }
-            //print("calling seguetoresult" + currentValue+"    "+thewinnernameis)
-            destinationVC.winnername=thewinnernameis*/
         }
     }
     
@@ -195,14 +179,6 @@ class ViewController: UIViewController {
                 currentValue="O"
                 currentPlayer=PlayerType.O
             }
-        /*switch currentPlayer {
-        case .X:
-            print("Current player is X")
-        case .O:
-            print("Current player is O")
-        case .Dator:
-            print("Current player is Dator")
-        }*/
     }
     
     
