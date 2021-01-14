@@ -20,10 +20,20 @@ class ResultViewController: UIViewController {
         performSegue(withIdentifier: segueToNewGame, sender: self)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier==segueToNewGame{
+            let destinationVC=segue.destination as! ViewController
+            destinationVC.playerx=playerx
+            destinationVC.playery=playery
+        }
+    }
+    
     let segueToNewGame="segueToNewGame"
     
     @IBOutlet weak var lblwinnerName: UILabel!
     var winnername:String?
+    var playerx:String?
+    var playery:String?
     
     /*
     // MARK: - Navigation

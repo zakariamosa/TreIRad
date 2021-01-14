@@ -22,8 +22,8 @@ class ViewController: UIViewController {
         btn32.tag=32
         btn33.tag=33
         
-        playerx=thetwoplayers[0].player_name
-        playery=thetwoplayers[1].player_name
+        //playerx=thetwoplayers[0].player_name
+        //playery=thetwoplayers[1].player_name
         player1.text=playerx
         player2.text=playery
         
@@ -60,6 +60,7 @@ class ViewController: UIViewController {
     var allplayersmoves=PlayerMoves()
     var playerx:String?
     var playery:String?
+    
     
     
     @IBAction func btnClicked(_ sender: UIButton) {
@@ -110,6 +111,8 @@ class ViewController: UIViewController {
             //winnername
             let destinationVC=segue.destination as! ResultViewController
             destinationVC.winnername=lblwinner.text
+            destinationVC.playerx=playerx
+            destinationVC.playery=playery
             /*var thewinnernameis:String
             if currentValue=="X" {
                 thewinnernameis=thetwoplayers[0].player_name

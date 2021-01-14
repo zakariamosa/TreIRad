@@ -7,7 +7,7 @@
 
 import UIKit
 
-var thetwoplayers:[Player]=[]
+
 
 class StartViewController: UIViewController {
 
@@ -31,8 +31,6 @@ class StartViewController: UIViewController {
             let destinationVC=segue.destination as! ViewController
             destinationVC.playerx=playerx.text
             destinationVC.playery=playery.text
-            thetwoplayers.append(Player(playerName: playerx.text!, playerType: PlayerType.X))
-            thetwoplayers.append(Player(playerName: playery.text!, playerType: PlayerType.O))
         }
     }
     
