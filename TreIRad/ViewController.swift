@@ -51,7 +51,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var player1: UILabel!
     @IBOutlet weak var player2: UILabel!
     
-    @IBOutlet weak var lblwinner: UILabel!
+    
     
     let segueToResult="segueToResult"
     
@@ -59,6 +59,7 @@ class ViewController: UIViewController {
     var allplayersmoves=PlayerMoves()
     var playerx:String?
     var playery:String?
+    var lblwinner:String?
     
     
     
@@ -86,10 +87,10 @@ class ViewController: UIViewController {
         
         if doesThePlayerWinnTheGame(thecurrentplayer:currentPlayer){
             if currentValue=="X" {
-                lblwinner.text=playerx
+                lblwinner=playerx
                 performSegue(withIdentifier: segueToResult, sender: self)
             } else {
-                lblwinner.text=playery
+                lblwinner=playery
                 performSegue(withIdentifier: segueToResult, sender: self)
             }
             
@@ -105,7 +106,7 @@ class ViewController: UIViewController {
         if segue.identifier==segueToResult{
             //winnername
             let destinationVC=segue.destination as! ResultViewController
-            destinationVC.winnername=lblwinner.text
+            destinationVC.winnername=lblwinner
             destinationVC.playerx=playerx
             destinationVC.playery=playery
         }
@@ -134,7 +135,7 @@ class ViewController: UIViewController {
         }
         
         if allplayersmoves.thePlayerMoves.count==9{
-            lblwinner.text="Oavgjort"
+            lblwinner="Oavgjort"
             
             performSegue(withIdentifier: segueToResult, sender: self)
         }
