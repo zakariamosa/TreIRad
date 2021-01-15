@@ -159,10 +159,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tictactoe" translatesAutoresizingMaskIntoConstraints="NO" id="OON-Xl-Hyr">
-                                <rect key="frame" x="0.0" y="185" width="414" height="210"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bFm-7z-C52">
                                 <rect key="frame" x="114" y="431" width="280" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -198,6 +194,10 @@
                                     <action selector="buttonStartNewGamePressed:" destination="8LY-ID-bg2" eventType="touchUpInside" id="2na-yh-R0R"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="xob" translatesAutoresizingMaskIntoConstraints="NO" id="OON-Xl-Hyr">
+                                <rect key="frame" x="20" y="96" width="374" height="263"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5dJ-Dw-aAt"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
@@ -259,8 +259,8 @@
         <segue reference="70n-Ae-wIy"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="tictactoe" width="498" height="280"/>
         <image name="wehaveawinner" width="338" height="250"/>
+        <image name="xob" width="1480" height="978"/>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
